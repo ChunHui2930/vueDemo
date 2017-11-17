@@ -1,6 +1,7 @@
 <template>
 <main>
-<p>{{ msg }}</p>   
+<p>{{ msg }}</p>  
+  <router-view></router-view> 
 </main>
 
 
@@ -13,7 +14,7 @@
 export default{
     data(){
         return{
-            msg:'脚手架初搭建'
+            msg:'测试vue'
         }
     }
 }
