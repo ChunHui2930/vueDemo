@@ -1,4 +1,5 @@
 //要把组件渲染到页面上，就必须要导入Vue这个库  之后才可以new它
+//导入vue.js和vue-router.js  第三方包
 import Vue from 'Vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
@@ -10,6 +11,7 @@ import Home from '../component/home/home.vue';
 import News from '../component/news/views.vue';
 import Photo from '../component/photo/photo.vue';
 
+//new vue渲染根组件到视图中的占位标签
 new Vue({
     el:'#app',
     render:function(c){
@@ -17,6 +19,7 @@ new Vue({
     },
     //路由配置
     router:new VueRouter({
+        //路线配置
         routes:[
             {path:"/",component:Home},
             {path:'/news',component:News},
