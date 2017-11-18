@@ -1,6 +1,7 @@
 <template>
    <header>
       <mt-header fixed title="大甩卖"></mt-header>
+      <div class="null"></div>
    </header>  
 </template>
 <script>
@@ -8,4 +9,10 @@
 
     }
 </script>
-<style></style>
+
+<style lang="less" scoped>
+
+   .null{
+       height:40px;
+   }
+</style>

@@ -4,10 +4,15 @@ import Vue from 'vue';
 // import VueRouter from 'vue-router';
 import MintUi from 'mint-ui';
 import 'mint-ui/lib/style.css';
-import common from '../component/common';
-import  'mui/dist/css/mui.css';
-// import  'mui/example/';
-import  'mui/examples/hello-mui/css/icons-extra.css'
+import common from '../component/common';  //
+import  'mui/dist/css/mui.css';  //用于完成头部
+import  'mui/examples/hello-mui/css/icons-extra.css';    //扩展图标
+
+import axios from 'axios';
+
+//将axios添加到vue原型中实现共享
+Vue.prototype.axios=axios;
+
 //手动启用插件
 // Vue.use(VueRouter);
 
