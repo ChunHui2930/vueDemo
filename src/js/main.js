@@ -9,6 +9,8 @@ import  'mui/dist/css/mui.css';  //用于完成头部
 import  'mui/examples/hello-mui/css/icons-extra.css';    //扩展图标
 import less from '../less/index.less';
 import axios from 'axios';
+import vuePicturePreview from 'vue-picture-preview'
+
 //导入过滤
 import Filter from '../fliter/index'
 //将axios添加到vue原型中实现共享
@@ -21,6 +23,7 @@ Vue.use(VueRouter);
 Vue.use(MintUi);
 Vue.use(common);
 Vue.use(Filter);
+Vue.use(vuePicturePreview);  //图片预览
 //导入根组件
 import App from '../component/App.vue';  
 //导入配置

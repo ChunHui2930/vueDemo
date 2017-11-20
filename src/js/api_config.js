@@ -9,4 +9,12 @@ export default {
     getND:`${domain}/getnew/`,
 
     //获取图片列表接口
+    //分类
+    photoC:`${domain}/getimgcategory/`,
+    //图片列表
+    photoL:`${domain}/getimages/`,
+    //图片详情
+    photoD:`${domain}/getimageinfo/`,
+    //缩略图
+    photoT:`${domain}/getthumimages/`,
 }
