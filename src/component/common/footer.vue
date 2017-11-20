@@ -18,8 +18,14 @@
 				<span class="mui-tab-label">设置</span>
 			</router-link>
 		</nav>
+		<i></i>
 </footer>
    
 </template>
 <script></script>
-<style></style>
+<style>
+i{
+	display:block;
+	height:50px;
+}
+</style>
