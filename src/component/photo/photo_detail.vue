@@ -14,8 +14,7 @@
 		            <a href="#">
 		                <img class="mui-media-object" v-bind:src="item.src" v-preview="item.src">		               
                     </a>
-             </li>
-                
+             </li>        
 		    </ul>
               <div class="mui-card-footer" v-html="photoDetail.content"></div>
        </div>    

@@ -17,4 +17,10 @@ export default {
     photoD:`${domain}/getimageinfo/`,
     //缩略图
     photoT:`${domain}/getthumimages/`,
+
+    //商品列表
+    goodsL:`${domain}/getgoods/`,
+    goodsD:`${domain}/goods/getdesc`,
+    goodsT: `${domain}/getthumimages/`,     // 该接口后面需要一个商品id: /getthumimages/:id
+    goodsP: `${domain}/getinfo/`,
 }
