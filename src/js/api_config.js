@@ -20,7 +20,7 @@ export default {
 
     //商品列表
     goodsL:`${domain}/getgoods/`,
-    goodsD:`${domain}/goods/getdesc`,
+    goodsD:`${domain}/goods/getdesc/`,
     goodsT: `${domain}/getthumimages/`,     // 该接口后面需要一个商品id: /getthumimages/:id
-    goodsP: `${domain}/getinfo/`,
+    goodsP: `${domain}/goods/getinfo/`,
 }

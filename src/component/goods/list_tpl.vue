@@ -40,15 +40,15 @@
      return {
        goodsList:[],
        pageIndex:1,
-       isEmpty:false
+       isEmpty:false 
      };
    },
    methods: {
      getGoodsList() {
-       if(!this.isEmpty){
+       if(!this.isEmpty){     //首先进行判断  如果不为空  就执行以下代码
            this.axios.get(`${this.api.goodsL}?pageindex=${this.pageIndex}`)
                .then(rsp=>{this.goodsList.push(...rsp.data.message);
-               if(rsp.data.message.length==0){
+               if(rsp.data.message.length==0){  //判断数据是否为空 如果为空  则将isEmpty设为true
                     this.isEmpty=true;
                }
        })
@@ -57,17 +57,18 @@
   },
      loadMore() {
         //点击加载更多   push数据到原来图片列表的后面
-       this.pageIndex++;
-       this.getGoodsList();
+       this.pageIndex++;  //点击的时候  先对pageIndex加加
+       this.getGoodsList();  //重现渲染数据
      }
    },
    created() { 
-     this.getGoodsList();
+     this.getGoodsList();  //调用  渲染数据
    }
  }
 </script>
 
 <style lang="less">
+
   .goods-list {
   	.mui-card {
   		box-shadow: 0px 0px 4px rgba(0, 0, 0, .3);
